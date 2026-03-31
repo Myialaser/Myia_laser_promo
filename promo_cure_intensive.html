@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Myia Laser — Promo Cure Intensive</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:wght@100;300;400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1A1A1A; font-family: "Josefin Sans", sans-serif; color: #FDFAF6; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; gap: 16px; }
+  .card { width: 100%; max-width: 540px; background: #0D0D0D; position: relative; overflow: hidden; }
+  .top-bar { height: 4px; background: linear-gradient(to right, #C4687A, #C9A96E, #C4687A); }
+  .bottom-bar { height: 4px; background: linear-gradient(to right, #C9A96E, #C4687A, #C9A96E); }
+  .card-header { padding: 28px 28px 20px; text-align: center; border-bottom: 1px solid rgba(201,169,110,0.15); }
+  .salon-name { font-size: 8px; letter-spacing: 5px; color: #C9A96E; margin-bottom: 8px; }
+  .card-title { font-family: "Cormorant Garamond", serif; font-size: 36px; font-weight: 300; color: white; line-height: 1.1; margin-bottom: 4px; }
+  .card-title em { font-style: italic; color: #C9A96E; }
+  .card-subtitle { font-size: 8px; letter-spacing: 3px; color: #C4687A; margin-bottom: 6px; }
+  .validity { font-size: 8px; letter-spacing: 2px; color: rgba(255,255,255,0.25); font-style: italic; }
+  .promo-block { margin: 20px 28px; background: #111; border-left: 3px solid #C4687A; padding: 24px 20px; }
+  .promo-tag { display: inline-block; background: #C4687A; color: white; font-size: 8px; letter-spacing: 2px; padding: 3px 12px; margin-bottom: 14px; }
+  .promo-name { font-family: "Cormorant Garamond", serif; font-size: 26px; color: white; margin-bottom: 8px; }
+  .promo-desc { font-size: 11px; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 16px; }
+  .prix-wrap { display: flex; align-items: flex-end; gap: 14px; margin-bottom: 16px; }
+  .prix-ancien { font-family: "Cormorant Garamond", serif; font-size: 20px; color: rgba(255,255,255,0.25); text-decoration: line-through; }
+  .prix-promo { font-family: "Cormorant Garamond", serif; font-size: 48px; font-weight: 300; color: #C9A96E; line-height: 1; }
+  .prix-unite { font-size: 9px; color: rgba(255,255,255,0.3); letter-spacing: 2px; margin-bottom: 8px; }
+  .economie { display: inline-block; background: rgba(196,104,122,0.2); border: 1px solid rgba(196,104,122,0.4); color: #E8A0B0; font-size: 9px; letter-spacing: 2px; padding: 4px 12px; }
+  .inclus { margin: 20px 28px; }
+  .inclus-title { font-size: 8px; letter-spacing: 4px; color: #C9A96E; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(201,169,110,0.1); }
+  .inclus-item { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: rgba(255,255,255,0.55); }
+  .inclus-item::before { content: "✦"; color: #C9A96E; font-size: 10px; margin-top: 1px; flex-shrink: 0; }
+  .conditions { margin: 0 28px 16px; font-size: 9px; color: rgba(255,255,255,0.2); line-height: 1.8; font-style: italic; }
+  .rdv-wrap { padding: 0 28px 20px; }
+  .rdv-btn { display: block; background: #C4687A; color: white; text-decoration: none; text-align: center; font-size: 9px; letter-spacing: 3px; padding: 14px; transition: all 0.3s; }
+  .rdv-btn:hover { background: #C9A96E; color: #0D0D0D; }
+  .note { font-size: 8px; color: rgba(255,255,255,0.15); text-align: center; padding: 10px 0 20px; font-style: italic; }
+  .hint { color: rgba(201,169,110,0.3); font-size: 9px; letter-spacing: 2px; text-align: center; }
+  @media (max-width: 420px) {
+    body { padding: 14px; }
+    .card-header { padding: 22px 18px 16px; }
+    .card-title { font-size: 28px; }
+    .promo-block { margin: 16px 18px; padding: 18px 16px; }
+    .prix-promo { font-size: 40px; }
+    .inclus, .conditions { margin-left: 18px; margin-right: 18px; }
+    .rdv-wrap { padding: 0 18px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+  <div class="card-header">
+    <div class="salon-name">MYIA LASER — BAGNOLET</div>
+    <h1 class="card-title">Cure <em>Intensive</em></h1>
+    <div class="card-subtitle">OFFRE EXCLUSIVE — DURÉE LIMITÉE</div>
+    <div class="validity">✏️ Valable jusqu'au JJ/MM/AAAA</div>
+  </div>
+
+  <div class="promo-block">
+    <span class="promo-tag">✏️ -XX% / OFFRE SPÉCIALE</span>
+    <div class="promo-name">10 Séances Rituels Japonais</div>
+    <div class="promo-desc">✏️ Description de l'offre — ce qui est inclus, la durée, les conditions principales.</div>
+    <div class="prix-wrap">
+      <span class="prix-ancien">✏️ 000€</span>
+      <span class="prix-promo">✏️ 000€</span>
+    </div>
+    <div class="prix-unite">✏️ LA SÉANCE / LA CURE</div>
+    <span class="economie">✏️ VOUS ÉCONOMISEZ 00€</span>
+  </div>
+
+  <div class="inclus">
+    <div class="inclus-title">CE QUI EST INCLUS</div>
+    <div class="inclus-item">10 séances de rituels japonais sur mesure</div>
+    <div class="inclus-item">Bilan de peau offert + suivi personnalisé</div>
+    <div class="inclus-item">Protocole adapté à l'évolution de votre peau</div>
+    <div class="inclus-item">Transformation complète du teint</div>
+  </div>
+
+  <div class="conditions">
+    ✏️ Conditions : offre valable pour les nouvelles clientes uniquement / non cumulable / sur rendez-vous.
+  </div>
+
+  <div class="rdv-wrap">
+    <a class="rdv-btn" href="https://www.fresha.com/book-now/myia-laser-rrqkkllp/all-offer?share=true&pId=2834047" target="_blank">
+      🌸 RÉSERVER CETTE OFFRE
+    </a>
+  </div>
+  <div class="note">* Sur rendez-vous uniquement · Bagnolet 93170 · Offre non cumulable</div>
+  <div class="bottom-bar"></div>
+</div>
+<p class="hint">myialaser.github.io/Myia_laser</p>
+</body>
+</html>
